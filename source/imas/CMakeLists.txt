@@ -27,6 +27,11 @@ endif(  )
 
 include( plugins )
 
+set( IMAS_MAPPINGS_FILE "${CMAKE_INSTALL_PREFIX}/etc/imas/mappings.txt"
+     CACHE FILEPATH "Machine mapping table used by the IMAS plugin (UDA_IMAS_MAPPINGS_FILE)" )
+
+install( FILES mappings.txt DESTINATION etc/imas )
+
 set( SOURCES imas_plugin.cpp curl_wrapper.cpp )
 set( HEADERS imas_plugin.h )
 
