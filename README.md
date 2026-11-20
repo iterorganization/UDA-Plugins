@@ -86,3 +86,4 @@ A description of the plugins included in this repository is given below:
 | Name | Option               | Description                                                                                             | Default |
 |------|----------------------|---------------------------------------------------------------------------------------------------------|---------|
 | IMAS | ENABLE_AUTHORISATION | Enable authorisation code in the IMAS plugin to check current UDA user against an authorisation system. | OFF     |
+| IMAS | IMAS_MAPPINGS_FILE   | Machine mapping table exported as `UDA_IMAS_MAPPINGS_FILE` in `etc/plugins.d/imas.cfg`.                  | `<prefix>/etc/imas/mappings.txt` (installed copy of `source/imas/mappings.txt`) |
